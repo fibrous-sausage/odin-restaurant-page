@@ -27,7 +27,7 @@ module.exports = {
                 use: ['style-loader', 'css-loader'], // Use the appropriate loaders. Note that order matters; the CSS must be read as a string by css-loader, then use style-loader to inject the CSS into the appropriate JS files. Loaders are read by webpack from right to left, i.e. starting from the end.
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i, // Apply this rule to all image files
+                test: /\.(png|svg|jpg|jpeg|gif|webp)$/i, // Apply this rule to all image files
                 type: 'asset/resource', // Tell webpack that the above file types are assets to be used in JS
             }
         ],

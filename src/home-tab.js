@@ -1,6 +1,6 @@
 import customerImage from './images/cat.jpg';
 
-export const createLoadHomeContent = (document, rootElement) => {
+export const createHomeTab = (document, rootElement) => {
     return () => {
         rootElement.replaceChildren(); // Empty the root element
 

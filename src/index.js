@@ -1,5 +1,8 @@
-import { createLoadHomeContent } from "./home";
+import { createHomeTab } from "./home-tab";
+import { createMenuTab } from "./menu-tab";
 
 const rootElement = document.querySelector("#content");
-const loadHomeContent = createLoadHomeContent(document, rootElement);
-loadHomeContent();
+const loadHomeTab = createHomeTab(document, rootElement);
+const loadMenuTab = createMenuTab(document, rootElement);
+loadHomeTab();
+loadMenuTab();
